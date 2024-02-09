@@ -16,4 +16,22 @@ Para quem não me conhece, sou Hellen Cristina, tenho 18 anos e sou iniciante em
 
 ## Aperfeiçoamento
 
+Depois de fazer toda a base do jogo, que era: pegar a letra, verificar se a letra está na palavra e mostrar a posição dela. Veio várias ideias de aperfeiçoamento, então vou conta-las e falar quais eu fiz.
+
+| Número da Ideia | Sobre a Ideia                                      | Estado    | Nível de dificuldade (na minha opinião) |
+|-----------------|-----------------------------------------------------|-----------|--------------------|
+| 1               | Encerrar o jogo, quando acabar o número de chances | Concluído | Fácil |
+| 2               | Fazer 2 modos no jogo(menu e escolha) | Concluído | Médio |
+| 3               | Fazer o modo 2: aleatoriedade | Concluído | Díficil |
+| 4               | Aceitar a letra, mesmo sem acento | Concluído | Díficil | 
+| 5               | Fazer esse jogo em pygame | Em andamento | Médio |
+| 6               | Printar a palavra no ínicio(mostrar a quantidade de letras) | Não comecei/ideia recente | Não determinado |
+
 ## Problemas
+
+A maior dificuldade que eu tive foi fazer o Python aceitar a palavra, mesmo que ela tenha acento. Por exemplo, se eu digitasse 'abóbora' e a tentativa fosse 'o', o programa deveria aceitar o 'ó' como correto e mostrá-lo.
+
+Tanto, que ao perguntar a resolução da ideia no ChatGBT(se ele fosse iniciante), fiquei pensando "Eu dificultei uma tarefa simples", pois, ele me deu um jogo da forca, bem simples! E sem acentos, mesmo que as palavras deviam ter. Fiquei feliz e ao mesmo tempo triste kkkkkkk
+Mas depois de perguntar em um fórum sobre uma resolução, conheci o unidecode e o switch, mas obtei pela opção mais rápida e simples, na minha opinião.
+
+Obrigado por lerem!
