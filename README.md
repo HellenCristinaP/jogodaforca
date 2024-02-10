@@ -12,6 +12,8 @@ Como devem imaginar, o jogador digita uma letra, e o Python revela a letra de ac
 
 Quando escolhe a opção de alguém escolher o tema e a palavra, ele pergunta quais vão ser e a o terminal, para que o segundo jogador não veja.
 
+![Visão do menu](./bem-vindo.png)
+
 ## Como foi essa jornada?
 
 Para quem não me conhece, sou Hellen Cristina, tenho 18 anos e sou iniciante em programação. Criei este projeto após perguntar ao ChatGPT sobre projetos para iniciantes, e essa foi uma das sugestões. Depois disso, fui direto para o VS Code para tentar criar um algoritmo, com comentários. Foi aí que percebi a importância de elaborar um algoritmo primeiro no papel e desmembrá-lo cuidadosamente! Esse foi um dos meus erros. Pesquisei como fazer um menu, sobre a biblioteca random (pois eu sabia que o Random escolhia aleatoriamente números, mas não palavras), sobre dicionários (foi aí que percebi a importância deles e para que podem ser usados) e a biblioteca unidecode (que facilitou um dos meus maiores problemas neste projeto: os acentos!).
@@ -29,6 +31,7 @@ Depois de fazer toda a base do jogo, que era: pegar a letra, verificar se a letr
 | 5               | Fazer esse jogo em pygame | Em andamento | Médio |
 | 6               | Printar a palavra no ínicio | Concluído | Fácil |
 | 7               | Se escrever a tentativa for a palavra correta, encerrar | Em andamento | Médio |
+| 8               | Não aceitar outros ints e mandar uma mensagem | Concluído | Médio |
 
 ## Problemas
 
