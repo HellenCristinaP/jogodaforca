@@ -29,7 +29,10 @@ temas = {
     'cores' : ['amarelo', 'cinza', 'branco', 'vermelho', 'azul', 'verde', 'roxo'],
 }
 
-while:
+while True:
+    exibir_menu()
+    mododejogar = input('Qual modo quer jogar? ')
+    
     if mododejogar == "1":
         #Quero que pegue uma categoria e palavra aleatoria
         tema = random.choice(list(temas.keys()))
