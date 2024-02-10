@@ -28,6 +28,8 @@ temas = {
 
 exibir_menu()
 
+tentativasdomodo = []
+
 while True:
     mododejogar = input('Qual modo quer jogar? ')
     
@@ -44,7 +46,18 @@ while True:
     else:
         #voltar, virando uma repetição
         print("Escolha não identificada")
+        tentativadomodo += 1
         continue
+        
+            if tentativademodo == 2:
+                print("Digite ou 1 ou 2! POR FAVOR!")
+            elif tentativademodo == 3:
+                print("Está de brincadeira com a minha cara?!")
+            elif tentativademodo == 5:
+                print("Pode ficar assim o quanto quiser, não falo mais nada")
+            elif tentativademodo >= 6:
+                print("Infelizmente, acabou o jogo")
+                break
 
 #armazenar a palavra e as letras
 letra = list(unidecode(palavra)) #remove os acentos
