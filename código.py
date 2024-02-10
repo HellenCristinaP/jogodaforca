@@ -33,10 +33,13 @@ if mododejogar == "1":
     #Quero que pegue uma categoria e palavra aleatoria
     tema = random.choice(list(temas.keys()))
     palavra = random.choice(temas[tema])
-else:
+if mododejogar == "2":
     #definir tema e palavra
     tema = input("Qual o tema? ")
     palavra = input("Qual a palavra? ")
+else:
+    print("Escolha não identificada")
+    
 
 #armazenar a palavra e as letras
 letra = list(unidecode(palavra)) #remove os acentos
