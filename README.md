@@ -39,7 +39,8 @@ A maior __dificuldade__ que eu tive foi fazer o Python aceitar a letra, mesmo qu
 
 Tanto, que ao perguntar a resolução da ideia no ChatGBT(se ele fosse iniciante), fiquei pensando "Eu dificultei uma tarefa simples", pois, ele me deu um jogo da forca, bem simples! E sem acentos, mesmo que as palavras deviam ter. Fiquei feliz e ao mesmo tempo triste kkkkkkk
 
-## Código de resolução do CHAT
+**Código de resolução do CHAT**
+    
     import random
 
     def escolher_palavra():
