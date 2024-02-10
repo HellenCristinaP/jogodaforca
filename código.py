@@ -28,7 +28,7 @@ temas = {
 
 exibir_menu()
 
-tentativasdomodo = []
+tentativasdomodo = 0
 
 while True:
     mododejogar = input('Qual modo quer jogar? ')
@@ -46,18 +46,23 @@ while True:
     else:
         #voltar, virando uma repetição
         print("Escolha não identificada")
-        tentativadomodo += 1
-        continue
-        
-            if tentativademodo == 2:
-                print("Digite ou 1 ou 2! POR FAVOR!")
-            elif tentativademodo == 3:
-                print("Está de brincadeira com a minha cara?!")
-            elif tentativademodo == 5:
-                print("Pode ficar assim o quanto quiser, não falo mais nada")
-            elif tentativademodo >= 6:
-                print("Infelizmente, acabou o jogo")
-                break
+        tentativasdomodo += 1
+
+    if tentativasdomodo == 3:
+        print('')
+        print("Digite ou 1 ou 2! POR FAVOR!")
+        print('')
+    elif tentativasdomodo == 4:
+        print('')
+        print("Está de brincadeira com a minha cara?!")
+        print('')
+    elif tentativasdomodo == 5:
+        print('')
+        print("Pode ficar assim o quanto quiser, não falo mais nada")
+        print('')    
+    elif tentativasdomodo >= 6:
+        print("Infelizmente, acabou o jogo")
+        break
 
 #armazenar a palavra e as letras
 letra = list(unidecode(palavra)) #remove os acentos
@@ -78,6 +83,11 @@ print('Você tem 7 tentativas')
 
 #repetição:
 while True:
+    
+    palavra_descoberta = ''.join(l if unidecode(l) in letracorrect else "_" for l in palavra)
+    print('Palavra: ', palavra_descoberta)
+    print(" ")
+
     #definir armazenamento das tentativas
     tentativa = input('Digite uma letra: ').lower() #lower(): deixar as letras minúsculas
 
@@ -98,6 +108,7 @@ while True:
     else:
         print('Letra incorreta, tente novamente')
         tentativas_erradas += 1
+        print('Tentativas erradas: ', tentativas_erradas)
     
         #verificar se o número de tentativas erradas foi atingidas
         if tentativas_erradas == max_letrasincorrect:
@@ -107,14 +118,7 @@ while True:
 
     historico_letras.append(unidecode(tentativa))
 
-    #palavra descoberta, quando for descoberta
-    palavra_descoberta = ''.join(l if unidecode(l) in letracorrect else "_" for l in palavra)
-    print("Palavra:", palavra_descoberta)
-
     # Verifica se todas as letras foram adivinhadas
     if all(unidecode(letra) in letracorrect for letra in palavra):
-        print("Parabéns! Você adivinhou as letras da palavra corretamente:", palavra)
+        print("Parabéns! Você adivinhou a palavra corretamente:", palavra)
         break
-
-#Aperfeiçoamento: Colocar a letra mesmo com acento: concluido
-#Aperfeiçoamento: quando a pessoa digitar a mesma letra, falar "já foi essa letra, tente novamente": concluido
