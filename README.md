@@ -16,7 +16,7 @@ Quando escolhe a opção de alguém escolher o tema e a palavra, ele pergunta qu
 
 ## Como foi essa jornada?
 
-Para quem não me conhece, sou Hellen Cristina, tenho 18 anos e sou iniciante em programação. Criei este projeto após perguntar ao ChatGPT sobre projetos para iniciantes, e essa foi uma das sugestões. Depois disso, fui direto para o VS Code para tentar criar um algoritmo, com comentários. Foi aí que percebi a importância de elaborar um algoritmo primeiro no papel e desmembrá-lo cuidadosamente! Esse foi um dos meus erros. Pesquisei como fazer um menu, sobre a biblioteca random (pois eu sabia que o Random escolhia aleatoriamente números, mas não palavras), sobre dicionários (foi aí que percebi a importância deles e para que podem ser usados) e a biblioteca unidecode (que facilitou um dos meus maiores problemas neste projeto: os acentos!).
+Para quem não me conhece, sou Hellen Cristina, tenho 18 anos e sou iniciante em programação. Criei este projeto após perguntar ao ChatGPT sobre projetos para iniciantes, e essa foi uma das sugestões. Depois disso, fui direto para o VS Code para tentar criar um algoritmo, com comentários. Foi aí que percebi a importância de elaborar um algoritmo primeiro no papel e desmembrá-lo cuidadosamente! Esse foi um dos meus erros. Pesquisei como fazer um menu, sobre a biblioteca random (pois eu sabia que o Random escolhia aleatoriamente números, mas não palavras), sobre dicionários (foi aí que percebi a importância deles e para que podem ser usados) e a biblioteca unidecode (que facilitou um dos meus maiores problemas neste projeto: os acentos!). Consegui treinar bastante a lógica da programação! 
 
 ## Aperfeiçoamento
 
