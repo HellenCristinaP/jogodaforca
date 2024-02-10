@@ -16,9 +16,6 @@ def exibir_menu():
     print("1. Palavra aleatória")
     print("2. Seu amigo escolhe o tema e a palavra")
 
-exibir_menu()
-mododejogar = input('Qual modo quer jogar? ')
-
 #dicionario de palavras, para gerar a aleatoriedade
 temas = {
     'animal': ['vaca', 'peixe', 'pássaro', 'ovelha', 'cachorros', 'gato', 'leão', 'hipopotamo'],
@@ -29,8 +26,9 @@ temas = {
     'cores' : ['amarelo', 'cinza', 'branco', 'vermelho', 'azul', 'verde', 'roxo'],
 }
 
+exibir_menu()
+
 while True:
-    exibir_menu()
     mododejogar = input('Qual modo quer jogar? ')
     
     if mododejogar == "1":
