@@ -27,7 +27,8 @@ Depois de fazer toda a base do jogo, que era: pegar a letra, verificar se a letr
 | 3               | Fazer o modo 2: aleatoriedade | Concluído | Díficil |
 | 4               | Aceitar a letra, mesmo sem acento | Concluído | Díficil | 
 | 5               | Fazer esse jogo em pygame | Em andamento | Médio |
-| 6               | Printar a palavra no ínicio(mostrar a quantidade de letras) | Não comecei/ideia recente | Não determinado |
+| 6               | Printar a palavra no ínicio | Concluído | Fácil |
+| 7               | Se escrever a tentativa for a palavra correta, encerrar | Em andamento | Médio |
 
 ## Problemas
 
