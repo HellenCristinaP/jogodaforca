@@ -29,17 +29,21 @@ temas = {
     'cores' : ['amarelo', 'cinza', 'branco', 'vermelho', 'azul', 'verde', 'roxo'],
 }
 
-if mododejogar == "1":
-    #Quero que pegue uma categoria e palavra aleatoria
-    tema = random.choice(list(temas.keys()))
-    palavra = random.choice(temas[tema])
-if mododejogar == "2":
-    #definir tema e palavra
-    tema = input("Qual o tema? ")
-    palavra = input("Qual a palavra? ")
-else:
-    print("Escolha não identificada")
-    
+while:
+    if mododejogar == "1":
+        #Quero que pegue uma categoria e palavra aleatoria
+        tema = random.choice(list(temas.keys()))
+        palavra = random.choice(temas[tema])
+        break
+    elif mododejogar == "2":
+        #definir tema e palavra
+        tema = input("Qual o tema? ")
+        palavra = input("Qual a palavra? ")
+        break
+    else:
+        #voltar, virando uma repetição
+        print("Escolha não identificada")
+        continue
 
 #armazenar a palavra e as letras
 letra = list(unidecode(palavra)) #remove os acentos
