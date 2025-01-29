@@ -3,7 +3,6 @@
 import os
 import random
 from unidecode import unidecode # Importa a função unidecode da biblioteca unidecode
-import pygame
 
 #fazer uma variavel imagem!
 #imagem =  : caminho da imagem
@@ -84,12 +83,18 @@ print('Você tem 7 tentativas')
 #repetição:
 while True:
     
-    palavra_descoberta = ''.join(l if unidecode(l) in letracorrect else "_" for l in palavra)
+    palavra_descoberta = ''.join(l if unidecode(l) in letracorrect else "_ " for l in palavra)
     print('Palavra: ', palavra_descoberta)
     print(" ")
 
     #definir armazenamento das tentativas
     tentativa = input('Digite uma letra: ').lower() #lower(): deixar as letras minúsculas
+
+    if tentativa == palavra:
+        print('Parabéns! Você adivinhou a palavra corretamente:', palavra)
+        #quebrar o loop sem sair do programa, mas voltar ao início
+        break
+
 
     #verificar se é letra única
     #significado de isalpha():verificar se tem string=! ou len():verificar o números de elementos enviados=1
@@ -114,11 +119,14 @@ while True:
         if tentativas_erradas == max_letrasincorrect:
             print('Infelizmente, acabou suas tentativas')
             print('A palavra era', palavra)
-            break
 
     historico_letras.append(unidecode(tentativa))
 
     # Verifica se todas as letras foram adivinhadas
     if all(unidecode(letra) in letracorrect for letra in palavra):
         print("Parabéns! Você adivinhou a palavra corretamente:", palavra)
-        break
+    historico_letras.append(unidecode(tentativa))
+
+    # Verifica se todas as letras foram adivinhadas
+    if all(unidecode(letra) in letracorrect for letra in palavra):
+        print("Parabéns! Você adivinhou a palavra corretamente:", palavra)
